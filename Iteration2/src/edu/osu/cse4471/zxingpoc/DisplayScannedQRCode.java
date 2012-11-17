@@ -10,6 +10,7 @@ import android.app.Activity;
 import android.content.Intent;
 
 public class DisplayScannedQRCode extends Activity {
+	
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

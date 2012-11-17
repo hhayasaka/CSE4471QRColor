@@ -45,6 +45,12 @@
         <activity
             android:name=".EncryptActivity" >
         </activity>
+        <activity
+            android:name=".ScanCode" >
+        </activity>
+        <activity
+            android:name=".ScanCode" >
+        </activity>
     </application>
 
 </manifest>

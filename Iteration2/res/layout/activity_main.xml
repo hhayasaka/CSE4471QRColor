@@ -6,62 +6,33 @@
     android:gravity="bottom" >
 
     <Button
-        android:id="@+id/scanQRCode"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="166dp"
+        android:text="@string/Get_Encryption_Key" />
+
+    <Button
+        android:id="@+id/scanQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginTop="49dp"
         android:onClick="scanQRCode"
         android:text="@string/Scan_QR_Code" />
 
-    <Button
-        android:id="@+id/encryptMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/scanQRCode"
-        android:layout_centerHorizontal="true"
-        android:onClick="encryptMessage"
-        android:text="@string/ENCRYPT" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/encryptMessage"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
-        android:ems="10"
-        android:hint="@string/password_hint"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/edit_message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/password"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="@string/Encrypt_Hint" >
-
-        <requestFocus />
-    </EditText>
-    
-        <ImageView
+    <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="38dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/menu_image" />
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/edit_message"
-            android:layout_centerHorizontal="true"
-            android:text="@string/Get_Encryption_Key" />
 
 </RelativeLayout>
