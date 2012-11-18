@@ -8,53 +8,76 @@
 package edu.osu.cse4471.zxingpoc;
 
 public final class R {
+    public static final class array {
+        public static final int color_arrays=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class color {
         public static final int black=0x7f050000;
     }
     public static final class drawable {
-        public static final int ic_action_search=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int icon=0x7f020002;
-        public static final int menu_image=0x7f020003;
+        public static final int black_icon=0x7f020000;
+        public static final int blue_icon=0x7f020001;
+        public static final int brown_icon=0x7f020002;
+        public static final int fuschia_icon=0x7f020003;
+        public static final int green_icon=0x7f020004;
+        public static final int ic_action_search=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int icon=0x7f020007;
+        public static final int menu_image=0x7f020008;
+        public static final int orange_icon=0x7f020009;
+        public static final int red_icon=0x7f02000a;
+        public static final int turquois_icon=0x7f02000b;
+        public static final int violet_icon=0x7f02000c;
     }
     public static final class id {
-        public static final int Button01=0x7f080015;
-        public static final int Button02=0x7f080014;
-        public static final int Button03=0x7f080013;
-        public static final int Button04=0x7f08000e;
-        public static final int Button05=0x7f08000f;
-        public static final int Button06=0x7f080010;
-        public static final int button1=0x7f080000;
-        public static final int button2=0x7f080001;
-        public static final int button3=0x7f080002;
-        public static final int button4=0x7f080003;
-        public static final int button5=0x7f080008;
-        public static final int button6=0x7f080007;
-        public static final int button7=0x7f080004;
-        public static final int button8=0x7f080005;
-        public static final int button9=0x7f080006;
-        public static final int edit_message=0x7f08000c;
-        public static final int encryptMessage=0x7f08000d;
-        public static final int imageView1=0x7f080012;
-        public static final int menu_settings=0x7f080016;
-        public static final int password=0x7f08000b;
-        public static final int relativeLayout2=0x7f080009;
-        public static final int scanQRCode=0x7f080011;
-        public static final int textView1=0x7f08000a;
+        public static final int Spinner01=0x7f09001a;
+        public static final int Spinner02=0x7f09001b;
+        public static final int Spinner03=0x7f09001c;
+        public static final int Spinner04=0x7f090010;
+        public static final int Spinner05=0x7f090012;
+        public static final int Spinner06=0x7f090014;
+        public static final int TextView01=0x7f09000f;
+        public static final int TextView02=0x7f090011;
+        public static final int TextView03=0x7f090013;
+        public static final int button1=0x7f090006;
+        public static final int button2=0x7f090007;
+        public static final int button3=0x7f090008;
+        public static final int button4=0x7f090009;
+        public static final int button5=0x7f09000e;
+        public static final int button6=0x7f09000d;
+        public static final int button7=0x7f09000a;
+        public static final int button8=0x7f09000b;
+        public static final int button9=0x7f09000c;
+        public static final int color=0x7f09001e;
+        public static final int color_icon=0x7f09001d;
+        public static final int edit_message=0x7f090016;
+        public static final int encryptMessage=0x7f090017;
+        public static final int imageView1=0x7f090019;
+        public static final int menu_settings=0x7f09001f;
+        public static final int password=0x7f090015;
+        public static final int scanQRCode=0x7f090018;
+        public static final int textView1=0x7f090000;
+        public static final int textView2=0x7f090001;
+        public static final int textView3=0x7f090002;
+        public static final int textView4=0x7f090003;
+        public static final int textView5=0x7f090004;
+        public static final int textView6=0x7f090005;
     }
     public static final class layout {
-        public static final int activity_color_chooser=0x7f030000;
-        public static final int activity_display_scanned_qrcode=0x7f030001;
-        public static final int activity_encrypt=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int activity_scan=0x7f030004;
+        public static final int activity_about=0x7f030000;
+        public static final int activity_color_chooser=0x7f030001;
+        public static final int activity_display_scanned_qrcode=0x7f030002;
+        public static final int activity_encrypt=0x7f030003;
+        public static final int activity_main=0x7f030004;
+        public static final int activity_scan=0x7f030005;
+        public static final int row=0x7f030006;
     }
     public static final class menu {
-        public static final int activity_color_chooser=0x7f070000;
-        public static final int activity_display_scanned_qrcode=0x7f070001;
-        public static final int activity_main=0x7f070002;
+        public static final int activity_color_chooser=0x7f080000;
+        public static final int activity_display_scanned_qrcode=0x7f080001;
+        public static final int activity_main=0x7f080002;
     }
     public static final class string {
         public static final int BLACK=0x7f040011;
@@ -72,6 +95,9 @@ public final class R {
         public static final int WHITE=0x7f040012;
         public static final int YELLOW=0x7f04000d;
         public static final int app_name=0x7f040000;
+        public static final int color_prompt1=0x7f040016;
+        public static final int color_prompt2=0x7f040017;
+        public static final int color_prompt3=0x7f040018;
         public static final int hello_world=0x7f040009;
         public static final int menu_settings=0x7f040001;
         public static final int password_hint=0x7f040007;
@@ -81,6 +107,6 @@ public final class R {
         public static final int title_activity_main=0x7f040004;
     }
     public static final class style {
-        public static final int AppTheme=0x7f060000;
+        public static final int AppTheme=0x7f070000;
     }
 }

@@ -1,69 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/relativeLayout2"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:gravity="bottom" >
-
+    android:background="@color/black"
+>
+    
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="180dp"
-        android:text="@string/Encrypt_Message" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:hint="@string/password_hint"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/edit_message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
-        android:layout_centerHorizontal="true"
-        android:hint="@string/Encrypt_Hint" />
+        android:text="@string/Encrypt_Message"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" 
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
 
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose response color for bottom left:"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" 
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView1"/>
+
+    <Spinner
+        android:id="@+id/Spinner04"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:prompt="@string/color_prompt1" 
+        android:layout_below="@+id/TextView01"/>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose response color for Top left:"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" 
+        android:layout_below="@+id/Spinner04"/>
+    
+    <Spinner
+        android:id="@+id/Spinner05"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:prompt="@string/color_prompt2" 
+        android:layout_below="@+id/TextView02"/>
+    
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose response color for Top right:"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" 
+        android:layout_below="@+id/Spinner05"/>
+    
+    <Spinner
+        android:id="@+id/Spinner06"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:prompt="@string/color_prompt3"
+        android:layout_below="@+id/TextView03"/>
+    
+     <EditText
+         android:id="@+id/password"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Spinner06"
+         android:layout_marginTop="20dp"
+         android:hint="@string/password_hint"
+         android:inputType="textPassword" />
+
+     <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Encrypt_Hint" 
+        android:layout_below="@+id/password"/>
+
     <Button
         android:id="@+id/encryptMessage"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_message"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:onClick="encryptMessage"
-        android:text="@string/ENCRYPT" />
-
-    <Button
-        android:id="@+id/Button04"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
-        android:text="Button4" />
-
-    <Button
-        android:id="@+id/Button05"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button04"
-        android:layout_below="@+id/Button04"
-        android:text="Button5" />
-
-    <Button
-        android:id="@+id/Button06"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/encryptMessage"
-        android:layout_below="@+id/Button05"
-        android:text="Button6" />
+        android:text="@string/ENCRYPT"
+        android:textSize="25sp" />
 
 </RelativeLayout>

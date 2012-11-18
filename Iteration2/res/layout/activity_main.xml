@@ -12,7 +12,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="166dp"
-        android:text="@string/Get_Encryption_Key" />
+        android:text="Encrypt Message" />
 
     <Button
         android:id="@+id/scanQRCode"
@@ -34,5 +34,14 @@
         android:layout_marginTop="38dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/menu_image" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scanQRCode"
+        android:layout_alignRight="@+id/scanQRCode"
+        android:layout_below="@+id/scanQRCode"
+        android:text="About" />
 
 </RelativeLayout>

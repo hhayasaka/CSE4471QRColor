@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 	
-	Button button, button2;
+	Button button, button2, button3;
 	
 	/* ID for activity passing from MainActivity */
 	public final static String DISPLAY_MESSAGE = "edu.osu.cse4471.zxingpoc.MainActivity";
@@ -35,6 +35,7 @@ public class MainActivity extends Activity {
  
 		button = (Button) findViewById(R.id.button1);
 		button2 = (Button) findViewById(R.id.scanQRCode);
+		button3 = (Button) findViewById(R.id.button2);
 		button.setOnClickListener(new OnClickListener() {
  
 			public void onClick(View arg0) {
@@ -50,6 +51,16 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
  
 			    Intent intent = new Intent(context, ScanCode.class);
+                            startActivity(intent);   
+ 
+			}
+ 
+		});
+		button3.setOnClickListener(new OnClickListener() {
+			 
+			public void onClick(View arg0) {
+ 
+			    Intent intent = new Intent(context, AboutActivity.class);
                             startActivity(intent);   
  
 			}

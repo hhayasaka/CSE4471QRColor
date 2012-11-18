@@ -43,10 +43,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:label="@string/title_activity_main"
             android:name=".EncryptActivity" >
         </activity>
         <activity
+            android:label="@string/title_activity_main"
             android:name=".ScanCode" >
+        </activity>
+        <activity
+            android:label="@string/title_activity_main" 
+            android:name=".AboutActivity" >
         </activity>
     </application>
 

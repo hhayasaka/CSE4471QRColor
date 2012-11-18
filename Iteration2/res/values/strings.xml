@@ -6,7 +6,7 @@
     <string name="ENCRYPT">Encrypt</string>
     <string name="title_activity_main">QR Color</string>
     <string name="title_activity_display_scanned_qrcode">Display Scanned QR Code</string>
-    <string name="Encrypt_Hint">Click to encrypt your message</string>
+    <string name="Encrypt_Hint">Message to Encrypt</string>
     <string name="password_hint">Enter Password</string>
     <string name="title_activity_color_prompt">Color Prompt</string>
     <string name="hello_world">Hello world!</string>
@@ -25,4 +25,19 @@
 	<string name="Encrypt_Message">Encrypt your message here.</string>
 	
 	<color name="black">#000000</color>
+	
+    <string name="color_prompt1">Choose Bottom Left Color</string>
+ 	<string name="color_prompt2">Choose Top Left Color</string>
+ 	<string name="color_prompt3">Choose Top Right Color</string>
+    <string-array name="color_arrays">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Black</item>
+        <item>Violet</item>
+        <item>Brown</item>
+        <item>Fushia</item>
+        <item>Orange</item>
+        <item>Turquoise</item>
+    </string-array>
 </resources>

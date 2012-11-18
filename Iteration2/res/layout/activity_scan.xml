@@ -1,61 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/relativeLayout2"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:gravity="bottom" >
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:hint="@string/password_hint"
-        android:inputType="textPassword" />
-
+    android:background="@color/black"
+>
+    
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:text="@string/Encrypt_Message" />
+        android:text="Input Your Credentials"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" 
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
 
-    <Button
-        android:id="@+id/Button03"
+    <TextView
+        android:id="@+id/TextView01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Button3" />
+        android:text="Choose response color for bottom left:"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" 
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView1"/>
 
+    <Spinner
+        android:id="@+id/Spinner01"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:prompt="@string/color_prompt1" 
+        android:layout_below="@+id/TextView01"/>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose response color for Top left:"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" 
+        android:layout_below="@+id/Spinner01"/>
+    
+    <Spinner
+        android:id="@+id/Spinner02"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:prompt="@string/color_prompt2" 
+        android:layout_below="@+id/TextView02"/>
+    
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose response color for Top right:"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" 
+        android:layout_below="@+id/Spinner02"/>
+    
+    <Spinner
+        android:id="@+id/Spinner03"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:prompt="@string/color_prompt3"
+        android:layout_below="@+id/TextView03"/>
+    
+
+     <EditText
+         android:id="@+id/password"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Spinner03"
+         android:layout_marginTop="20dp"
+         android:hint="@string/password_hint"
+         android:inputType="textPassword" />
+     
     <Button
         android:id="@+id/scanQRCode"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:onClick="scanQRCode"
-        android:text="@string/Scan_QR_Code" />
-
-    <Button
-        android:id="@+id/Button02"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/scanQRCode"
-        android:layout_centerHorizontal="true"
-        android:text="Button1" />
-
-    <Button
-        android:id="@+id/Button01"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Button03"
-        android:layout_alignLeft="@+id/Button02"
-        android:text="Button2" />
+        android:text="@string/Scan_QR_Code"
+        android:textSize="25sp" />
 
 </RelativeLayout>
